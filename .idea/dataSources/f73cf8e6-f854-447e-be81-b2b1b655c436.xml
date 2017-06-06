@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="PostgreSQL - postgres@localhost">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.2">
+    <root id="1"/>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>12401</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <schema id="3" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2017-06-04.14:13:24.538</IntrospectionTimestamp>
+      <IntrospectionStateNumber>700</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="4" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="5" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="information_schema">
+      <ObjectId>12113</ObjectId>
+    </schema>
+    <sequence id="9" parent="3" name="hibernate_sequence">
+      <ObjectId>49319</ObjectId>
+      <StateNumber>700</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="10" parent="3" name="author">
+      <ObjectId>49304</ObjectId>
+      <StateNumber>698</StateNumber>
+    </table>
+    <table id="11" parent="3" name="book">
+      <ObjectId>49309</ObjectId>
+      <StateNumber>698</StateNumber>
+    </table>
+    <table id="12" parent="3" name="plane">
+      <ObjectId>32784</ObjectId>
+      <StateNumber>577</StateNumber>
+    </table>
+    <column id="13" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>696</StateNumber>
+    </column>
+    <column id="14" parent="10" name="country">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <StateNumber>696</StateNumber>
+    </column>
+    <column id="15" parent="10" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>696</StateNumber>
+    </column>
+    <column id="16" parent="10" name="year">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>696</StateNumber>
+    </column>
+    <index id="17" parent="10" name="author_pkey">
+      <ObjectId>49307</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="18" parent="10" name="author_pkey">
+      <ObjectId>49308</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>author_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="19" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>697</StateNumber>
+    </column>
+    <column id="20" parent="11" name="page">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>697</StateNumber>
+    </column>
+    <column id="21" parent="11" name="price">
+      <Position>3</Position>
+      <DataType>double precision|0</DataType>
+      <StateNumber>697</StateNumber>
+    </column>
+    <column id="22" parent="11" name="title">
+      <Position>4</Position>
+      <DataType>varchar(20)|0</DataType>
+      <StateNumber>697</StateNumber>
+    </column>
+    <column id="23" parent="11" name="year">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>697</StateNumber>
+    </column>
+    <column id="24" parent="11" name="author_id">
+      <Position>6</Position>
+      <DataType>bigint|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>697</StateNumber>
+    </column>
+    <index id="25" parent="11" name="book_pkey">
+      <ObjectId>49312</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="26" parent="11" name="book_pkey">
+      <ObjectId>49313</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>book_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="27" parent="11" name="fkklnrv3weler2ftkweewlky958">
+      <ObjectId>49314</ObjectId>
+      <ColNames>author_id</ColNames>
+      <RefTableName>author</RefTableName>
+      <RefKeyName>author_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="28" parent="12" name="name">
+      <Position>1</Position>
+      <DataType>text|0</DataType>
+      <StateNumber>577</StateNumber>
+    </column>
+    <column id="29" parent="12" name="speed">
+      <Position>2</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>577</StateNumber>
+    </column>
+    <column id="30" parent="12" name="id">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>577</StateNumber>
+    </column>
+    <column id="31" parent="12" name="mass">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>577</StateNumber>
+    </column>
+    <column id="32" parent="12" name="numberofpassengers">
+      <Position>5</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>577</StateNumber>
+    </column>
+    <column id="33" parent="12" name="numberofwheels">
+      <Position>6</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>577</StateNumber>
+    </column>
+    <column id="34" parent="12" name="numberofpilots">
+      <Position>7</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>577</StateNumber>
+    </column>
+    <index id="35" parent="12" name="plane_pkey">
+      <ObjectId>32790</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="36" parent="12" name="plane_pkey">
+      <ObjectId>32791</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>plane_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
